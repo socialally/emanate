@@ -1,6 +1,6 @@
 {
   "name": "emanate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Event emitter for the browser.",
   "author": "muji <noop@xpm.io>",
   "repository": {
