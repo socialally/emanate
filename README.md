@@ -9,7 +9,6 @@ Table of Contents
     * [Cover](#cover)
     * [Lint](#lint)
     * [Clean](#clean)
-    * [Dist](#dist)
     * [Spec](#spec)
     * [Instrument](#instrument)
     * [Readme](#readme)
@@ -22,7 +21,7 @@ Event emitter for the browser.
 ## Install
 
 ```
-npm i emanate
+npm i emanate --save
 ```
 
 ## Developer
@@ -69,14 +68,6 @@ Remove generated files:
 
 ```
 npm run clean
-```
-
-### Dist
-
-Create distribution builds in [dist](https://github.com/socialally/emanate/blob/master/dist):
-
-```
-npm run dist
 ```
 
 ### Spec

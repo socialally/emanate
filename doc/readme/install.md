@@ -1,5 +1,5 @@
 ## Install
 
 ```
-npm i emanate
+npm i emanate --save
 ```
