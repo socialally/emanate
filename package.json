@@ -45,7 +45,7 @@
     "dist": "gulp dist",
     "clean": "gulp clean",
     "spec": "gulp spec",
-    "instrument": "istanbul instrument --output instrument lib",
+    "instrument": "istanbul instrument --output instrument lib/",
     "cover": "npm run instrument && gulp cover",
     "test": "gulp test"
   },

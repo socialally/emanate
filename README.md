@@ -37,7 +37,7 @@ Run the headless test suite using [phantomjs](http://phantomjs.org):
 npm test
 ```
 
-To run the tests in a browser context open [test/index.html](https://github.com/socialally/emanate/blob/master/test/index.html) or use the server `npm start` (note this may be required for some browser configurations: cookies etc).
+To run the tests in a browser context open [test/index.html](https://github.com/socialally/emanate/blob/master/test/index.html) or use the server `npm start`.
 
 ### Start
 

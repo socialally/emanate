@@ -1,4 +1,4 @@
-var EventEmitter = require('../..')
+var EventEmitter = require('../../lib/event-emitter')
   , expect = require('chai').expect;
 
 function onEvent(){}

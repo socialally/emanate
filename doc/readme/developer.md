@@ -10,7 +10,7 @@ Run the headless test suite using [phantomjs][]:
 npm test
 ```
 
-To run the tests in a browser context open [test/index.html](/test/index.html) or use the server `npm start` (note this may be required for some browser configurations: cookies etc).
+To run the tests in a browser context open [test/index.html](/test/index.html) or use the server `npm start`.
 
 ### Start
 
@@ -42,14 +42,6 @@ Remove generated files:
 
 ```
 npm run clean
-```
-
-### Dist
-
-Create distribution builds in [dist](/dist):
-
-```
-npm run dist
 ```
 
 ### Spec
