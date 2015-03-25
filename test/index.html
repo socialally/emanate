@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spark: Test Specifications</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/mocha/mocha.css" />
+    <style>
+        #fixture, #mock {
+          position: absolute;
+          left: -2000px;
+          top: -2000px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <div id="fixture"></div>
+    <script src="../node_modules/mocha/mocha.js"></script>
+    <script>
+
+      // WARN: PhantomJS <2.x doesn't support bind yet
+
+      // Note this implementation is poor yet should be enough
+      // for our requirements, see: https://github.com/ariya/phantomjs/issues/10522
+      Function.prototype.bind = Function.prototype.bind || function (thisp) {
+        var fn = this;
+        return function () {
+          return fn.apply(thisp, arguments);
+        };
+      }
+
+      window.host = 'http://localhost:10001';
+      window.ns = '/social-ally/test/poll';
+
+      mocha.setup({
+        ui: 'bdd',
+        //ignoreLeaks: false,
+        globals: ['___browserSync___*', 'io*', '__jsonp__*'],
+        asyncOnly: true
+      });
+    </script>
+    <script src="spec.js"></script>
+    <script>
+
+      if(window.mochaPhantomJS) {
+        mochaPhantomJS.run();
+      }else{
+        mocha.checkLeaks();
+        mocha.run();
+      }
+    </script>
+  </body>
+</html>
