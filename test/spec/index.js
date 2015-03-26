@@ -4,4 +4,5 @@ module.exports = {
   all: require('./all'),
   emit: require('./emit'),
   once: require('./once'),
+  listeners: require('./listeners'),
 }
