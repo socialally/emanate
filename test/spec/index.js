@@ -1,3 +1,7 @@
 module.exports = {
-  ee: require('./event-emitter')
+  on: require('./on'),
+  off: require('./off'),
+  all: require('./all'),
+  emit: require('./emit'),
+  once: require('./once'),
 }
