@@ -18,4 +18,12 @@ describe('Event emitter:', function() {
     ee.emit(evt, 'foo', 16);
   });
 
+  it('should ignore bad listener', function(done) {
+    var ee = new EventEmitter();
+    var evt = 'event';
+    // chainable
+    expect(ee.once(evt, undefined)).to.equal(ee);
+    done();
+  });
+
 });
