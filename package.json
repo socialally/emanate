@@ -7,7 +7,7 @@
     "type": "git",
     "url": "git://github.com/socialally/emanate.git"
   },
-  "browser": "browser.js",
+  "browser": "lib/event-emitter.js",
   "dependencies": {},
   "devDependencies": {
     "brfs": "~1.4.0",
@@ -62,6 +62,7 @@
         "inc": [
           "introduction.md",
           "install.md",
+          "api.md",
           "developer.md",
           "license.md"
         ]
