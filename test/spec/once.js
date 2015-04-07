@@ -26,4 +26,22 @@ describe('Event emitter:', function() {
     done();
   });
 
+  it('should emit event once multiple listeners', function(done) {
+    var ee = new EventEmitter();
+    var evt = 'event'
+      , called = 0;
+
+    function onEvent(str, num){
+      called++;
+      if(called === 2) {
+        done();
+      }
+    }
+
+    // chainable
+    expect(ee.once(evt, onEvent)).to.equal(ee);
+    expect(ee.once(evt, onEvent)).to.equal(ee);
+    ee.emit(evt);
+  });
+
 });
