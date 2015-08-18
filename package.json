@@ -1,7 +1,8 @@
 {
   "name": "emanate",
-  "version": "1.1.1",
   "description": "Event emitter for the browser",
+  "version": "1.1.1",
+  "stability": "stable",
   "author": "muji <noop@xpm.io>",
   "repository": {
     "type": "git",
@@ -51,6 +52,10 @@
     "toc": "Table of Contents",
     "base": "https://github.com/socialally/emanate",
     "partial": [
+      {
+        "ref": "stability",
+        "format": "> `Stability: %s`"
+      },
       {
         "inc": [
           "introduction.md",

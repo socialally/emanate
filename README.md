@@ -25,6 +25,8 @@ Table of Contents
 Emanate
 =======
 
+> `Stability: stable`.
+
 Event emitter for the browser.
 
 ## Install
